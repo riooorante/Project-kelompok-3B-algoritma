@@ -14,12 +14,12 @@ setup(
         'cropping images.'
     ),
     author='Nama Anda',  # Replace with your name
-    author_email='email@jeanbumbungan@gmail.com',  # Replace with your email
+    author_email='jeanbumbungan@gmail.com',  # Replace with your email
     url='https://github.com/Jeanjrg/Project-kelompok-3B-algoritma.git',  # Replace with the appropriate repository URL
     classifiers=[
         'Programming Language :: Python :: 3',
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
     ],
-    python_requires='>=3.11.9',  # Adjust according to the required Python version
+    python_requires='>=3.6',  # Adjust according to the required Python version
 )
