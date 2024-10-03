@@ -1,8 +1,12 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
-    nama='project-kelompok-3b-algoritma',
-    versi='1.0',
-    paket=['project_kelompok_3b_algoritma'],
-    install_requires=[],
+    name='my_package',
+    version='0.1',
+    packages=find_packages(),
+    install_requires=[
+        # Tambahkan dependensi yang diperlukan
+        'numpy',      # Contoh dependensi
+        'Pillow',     # Untuk pengolahan gambar
+    ],
 )
