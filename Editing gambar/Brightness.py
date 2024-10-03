@@ -1,17 +1,8 @@
 from PIL import Image, ImageEnhance
 import os
 
-def adjust_brightness():
-    """Mengubah kecerahan gambar berdasarkan level yang ditentukan.
-    
-    Args:
-        image_path (str): Path ke file gambar input.
-        output_path (str): Path untuk menyimpan gambar output.
-        level (str): Tingkat kecerahan ('sangat gelap', 'gelap', 'normal', 'cerah', 'sangat cerah').
-    """
-    image_path = input("Masukkan path gambar (contoh: C:\\Users\\Asus\\Documents\\projek\\jj.jpg): ")
-    output_path = input("Masukkan path untuk menyimpan gambar output (contoh: C:\\Users\\Asus\\Documents\\projek\\brightened_image.jpg): ")
-    level = input("Masukkan tingkat kecerahan ('sangat gelap', 'gelap', 'normal', 'cerah', 'sangat cerah'): ")
+def adjust_brightness(image_path,output_path,level):
+    """Mengubah kecerahan gambar berdasarkan level yang ditentukan."""
     # Faktor kecerahan berdasarkan level yang ditentukan
     brightness_factors = {
         'sangat gelap': 0.2,
@@ -29,8 +20,14 @@ def adjust_brightness():
         print(f"File gambar tidak ditemukan: {image_path}")
         return
 
-    image = Image.open(image_path)
-    enhancer = ImageEnhance.Brightness(image)
-    brightened_image = enhancer.enhance(factor)
-    brightened_image.save(output_path)
-    brightened_image.show(output_path)
+    image = Image.open(image_path) # Membuka file gambar
+    enhancer = ImageEnhance.Brightness(image) # Menggunakan fungsi pencerahan dari pillow
+    brightened_image = enhancer.enhance(factor) #  Menentukan skala kecerahan gambar
+    brightened_image.save(output_path) # Menyimpan hasil di jalur output
+    brightened_image.show(output_path) # Menunjukkan hasil pencerahan gambar
+
+adjust_brightness(
+    "C:\\Users\jpael\OneDrive\Pictures\Ignition Teaser.png", # Buat backslash (\) menjadi double backslash (\\) agar path gambar dapat terbaca
+    "C:\\Users\jpael\OneDrive\Pictures\Ignition Teaser14.png", # Buat backslash (\) menjadi double backslash (\\) agar path gambar dapat terbaca
+    "sangat gelap" # Pilihan level yang tersedia: sangat gelap, gelap, normal, cerah, sangat cerah
+)

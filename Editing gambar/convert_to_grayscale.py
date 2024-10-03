@@ -1,9 +1,6 @@
 from PIL import Image
 
-def convert_image_to_grayscale():
-    # Tentukan path gambar input dan output
-    input_path = input("Masukkan jalur gambar (contoh: D:/Images/input.jpg): ")  # Masukkan path gambar Anda
-    output_path = input("Masukkan jalur output untuk menyimpan gambar (contoh: D:/Images/output_cropped.jpg): ")  # Ganti dengan path output yang diinginkan
+def convert_image_to_grayscale(input_path,output_path):
     # Buka gambar
     try:
         image = Image.open(input_path)
@@ -20,3 +17,8 @@ def convert_image_to_grayscale():
 
     # Menunjukkan hasil gambar
     grayscale_image.show()
+
+convert_image_to_grayscale(
+    "C:\\Users\jpael\OneDrive\Pictures\Ignition Teaser.png", # Buat backslash (\) menjadi double backslash (\\) agar path gambar dapat terbaca
+    "C:\\Users\jpael\OneDrive\Pictures\Ignition Teaser14.png" # Buat backslash (\) menjadi double backslash (\\) agar path gambar dapat terbaca
+)
