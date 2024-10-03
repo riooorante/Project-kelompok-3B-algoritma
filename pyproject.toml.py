@@ -20,4 +20,4 @@ numpy = "^1.21"
 Pillow = "^8.0"
 
 [tool.setuptools.packages.find]
-where = ["my_package"]
+where = ["my_package"]  # Pastikan 'my_package' adalah nama direktori yang sesuai
