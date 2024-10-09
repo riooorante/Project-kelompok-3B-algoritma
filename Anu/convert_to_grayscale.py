@@ -18,7 +18,3 @@ def convert_image_to_grayscale(input_path,output_path):
     # Menunjukkan hasil gambar
     grayscale_image.show()
 
-convert_image_to_grayscale(
-    "C:\\Users\jpael\OneDrive\Pictures\Ignition Teaser.png", # Buat backslash (\) menjadi double backslash (\\) agar path gambar dapat terbaca
-    "C:\\Users\jpael\OneDrive\Pictures\Ignition Teaser14.png" # Buat backslash (\) menjadi double backslash (\\) agar path gambar dapat terbaca
-)

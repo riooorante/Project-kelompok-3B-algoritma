@@ -26,8 +26,3 @@ def adjust_brightness(image_path,output_path,level):
     brightened_image.save(output_path) # Menyimpan hasil di jalur output
     brightened_image.show(output_path) # Menunjukkan hasil pencerahan gambar
 
-adjust_brightness(
-    "C:\\Users\jpael\OneDrive\Pictures\Ignition Teaser.png", # Buat backslash (\) menjadi double backslash (\\) agar path gambar dapat terbaca
-    "C:\\Users\jpael\OneDrive\Pictures\Ignition Teaser14.png", # Buat backslash (\) menjadi double backslash (\\) agar path gambar dapat terbaca
-    "sangat gelap" # Pilihan level yang tersedia: sangat gelap, gelap, normal, cerah, sangat cerah
-)

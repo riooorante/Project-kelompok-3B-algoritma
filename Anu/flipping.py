@@ -26,9 +26,3 @@ def flip_image(image_path,output_path,direction):
         flipped_image.show()
     except Exception as e:
         return f"Terjadi kesalahan: {e}"
-    
-flip_image(
-    "C:\\Users\jpael\OneDrive\Pictures\Ignition Teaser.png", # Buat backslash (\) menjadi double backslash (\\) agar path gambar dapat terbaca
-    "C:\\Users\jpael\OneDrive\Pictures\Ignition Teaser14.png", # Buat backslash (\) menjadi double backslash (\\) agar path gambar dapat terbaca
-    "Horizontal" 
-)
